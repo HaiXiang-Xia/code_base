@@ -53,3 +53,7 @@ def main(url):
     videourl = content['data']['dash']['video'][0]['baseUrl']
     audiourl = content['data']['dash']['audio'][0]['baseUrl']
     download(url,videourl,audiourl)
+
+if __name__ == "__main__":
+    url = input("请输入视频网址:")
+    main(url)
