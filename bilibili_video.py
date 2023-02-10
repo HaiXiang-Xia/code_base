@@ -8,10 +8,11 @@ import requests
 import os
 import json
 import re
+from fake_useragent import UserAgent
 
 headers = {
     'referer': 'https://www.bilibili.com/',
-    'user-agent': '',
+    'user-agent': UserAgent().random,
 }
 
 #视频，音频 合并
